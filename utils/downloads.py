@@ -69,7 +69,7 @@ def attempt_download(file, repo='ultralytics/yolov5'):  # from utils.downloads i
 
         if name in assets:
             safe_download(file,
-                          url=f'https://github.com/{repo}/releases/download/{tag}/{name}',
+                          url=f'https://github.com/{repo}/releases/download/v6.0/{name}',
                           # url2=f'https://storage.googleapis.com/{repo}/ckpt/{name}',  # backup url (optional)
                           min_bytes=1E5,
                           error_msg=f'{file} missing, try downloading from https://github.com/{repo}/releases/')
